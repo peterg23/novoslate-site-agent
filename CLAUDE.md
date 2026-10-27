@@ -7,7 +7,8 @@
   2. Add a short entry to the changelog in readme.txt for the new version.
   3. Run: `ship --bump X.Y.Z -m "Short summary of the change" --yes`
      - Use the next patch version (1.1.0 → 1.1.1) unless I ask for a minor or major bump.
-     - If `ship` doesn't update `NSA_VERSION` in novoslate-site-agent.php, update it to match before tagging.
+     - If `ship` doesn't update `NSA_VERSION` in novoslate-site-agent.php, update it to match. The release workflow refuses a mismatch.
+     - Releases publish from `main`: a push with a version that has no release yet gets tagged and released automatically.
 - If I say "don't ship" or "just test", make the changes but skip step 3.
 
 ## Rules
