@@ -1,8 +1,9 @@
+*.zip
+.DS_Store
+.distignore
 .git
 .github
 .gitignore
-.distignore
-build
+CLAUDE.md
 README.md
-*.zip
-.DS_Store
+build
